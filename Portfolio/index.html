@@ -9,12 +9,91 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ouw8ufw.css">
 
 </head>
 
 <body>
-    <h1>Daniel Lam</h1>
-    <p>My name is Daniel</p>
+  <div id="content">
+    <header>
+      <div id="home">
+      <div class="topnav" id="myTopnav">
+        <a href="#home" onclick="closeNavigation()">Home</a>
+        <a href="#about" onclick="closeNavigation()">About</a>
+        <a href="#work" onclick="closeNavigation()">Work</a>
+        <a href="#contact" onclick="closeNavigation()">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <h1><span></span></h1>
+    </div>
+    </header>
+
+    <main>
+    <div id="about">
+      <h1>About Me</h1>
+      <p>Based in <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <strong>Auckland, New Zealand</strong>. I am a <strong>Software Developer</strong> that is focused on creating brilliant iOS applications and a <strong>businessman</strong> that does business.
+        <br>
+        <br>
+        <a href="#work"><u>View my projects</u></a>
+      </p>      
+    </div>
+
+    <div id="work">
+      <h1>Work</h1>
+
+      <p>PickyPickle</p>
+      <p>Thunderstrm</p>
+      <p>Fitness App</p>
+      <p>Firebase App</p>
+      <p>Business App</p>
+    </div>
+
+    <div id="contact">
+      <h1>Contact Me</h1>
+      <h2>I occasionally take on new and interesting opportunities.</h2>
+      
+      <form>
+        <div id="name">
+          <label for="fname">Name *</label><br>
+            <input type="text" placeholder=" First name" name="fname">
+            <input type="text" placeholder=" Last name" name="fname">
+        </div>
+
+        <div id="email">
+          <label for="fname">Email Address *</label><br>
+          <input type="text" id="fname" placeholder=" Email address" name="fname"><br>
+
+          <label for="fname">Subject *</label><br>
+          <input type="text" id="fname" placeholder=" Subject" name="fname"><br>
+
+          <label for="fname">Message *</label><br>
+          <input type="text" id="fname" placeholder=" Message" name="fname"><br>
+        </div>
+
+        <input type="submit" value="SUBMIT">
+
+      </form>
+    </div>
+    </main>
+
+    <footer>
+      <table>
+        <th>
+          <a href="https://www.facebook.com/danielthelamb">
+            <i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </th>
+        <th>
+          <a href="https://www.instagram.com/daniel_the_lamb"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+        </th>
+      </table>
+    </footer>
+  </content>
   <script src="js/scripts.js"></script>
 </body>
 </html>
